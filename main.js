@@ -25,3 +25,39 @@ function cotizarDolar(pesos){
 function cotizarPesos(dolar){
     return "RECIBIRA PESOS:\n\n$"+ dolar * 200;
 }
+
+
+/*Otra manera
+
+function cotizarDolar(pesos){
+
+    return pesos / 200;
+
+}
+
+function cotizarPesos(dolar){
+
+    return dolar * 200;
+}
+
+let seleccion = prompt("SELECCIONES OPCION: \n\n 1 - PESOS A DOLARES \n 2 - DOLARES A PESOS \n\n 3 - SALIR");
+
+while(seleccion != "3"){
+
+    switch(seleccion){ 
+        case "1":
+            let pesos = prompt("Cantidad de pesos");
+            alert(cotizarDolar(pesos));
+            seleccion = prompt("SELECCIONES OPCION: \n\n 1 - PESOS A DOLARES \n 2 - DOLARES A PESOS \n\n 3 - SALIR");
+            break;
+        case "2":
+            let dolares = prompt("Cantidad de dolares");
+            alert(cotizarPesos(dolares));
+            seleccion = prompt("SELECCIONES OPCION: \n\n 1 - PESOS A DOLARES \n 2 - DOLARES A PESOS \n\n 3 - SALIR");
+            break;
+        default:
+            alert("ERROR: SELECCIONA UNA OPCION VALIDA");
+            seleccion = prompt("SELECCIONES OPCION: \n\n 1 - PESOS A DOLARES \n 2 - DOLARES A PESOS \n\n 3 - SALIR");
+            break;
+    }
+}*/ 
